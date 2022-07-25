@@ -8,6 +8,7 @@ import Logo from '../../assets/logo.png'
 const Footer = () => {
     return (
         <div className='Footer-container'>
+
             <hr />
             <div className='footer'>
                 <div className='social-links'>
@@ -19,7 +20,8 @@ const Footer = () => {
                     <img src={Logo} alt='' />
                 </div>
             </div>
-
+            <div className='blur blur-f-1'></div>
+            <div className='blur blur-f-2'></div>
         </div>
     )
 }
