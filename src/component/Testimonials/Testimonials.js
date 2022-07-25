@@ -8,9 +8,7 @@ const Testimonials = () => {
 
     const [selected, setSelected] = useState(0);
     const tLength = testimonialsData.length;
-    const onLeft = () => {
-        console.log('left Clicked')
-    }
+
     return (
         <div className='Testimonials'>
             <div className='left-t'>
