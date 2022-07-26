@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Header.css'
 import Logo from '../../assets/logo.png'
 import Bars from '../../assets/bars.png'
+import { Link } from 'react-scroll';
 
 export const Header = () => {
 
@@ -22,11 +23,45 @@ export const Header = () => {
                     <img src={Bars} alt='' style={{ width: "1.5rem", height: "1.5rem" }} />
                 </div> :
                 <ul className='header-menu'>
-                    <li onClick={() => setMenuOpen(false)}>Home</li>
-                    <li onClick={() => setMenuOpen(false)}>Programs</li>
-                    <li onClick={() => setMenuOpen(false)}>Why us</li>
-                    <li onClick={() => setMenuOpen(false)}>Plans</li>
-                    <li onClick={() => setMenuOpen(false)}>Testimonals</li>
+                    <li >
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            to='home'
+                            span={true}
+                            smooth={true}
+                        > Home</Link></li>
+                    <li >
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            to='programs'
+                            span={true}
+                            smooth={true}
+                        >
+                            Programs</Link></li>
+                    <li >
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            to='join-us'
+                            span={true}
+                            smooth={true}
+                        >
+                            Why us</Link></li>
+                    <li >
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            to='plans'
+                            span={true}
+                            smooth={true}
+                        >
+                            Plans</Link></li>
+                    <li >
+                        <Link
+                            onClick={() => setMenuOpen(false)}
+                            to='testimonals'
+                            span={true}
+                            smooth={true}
+                        >
+                            Testimonals</Link></li>
                 </ul>
             }
 
